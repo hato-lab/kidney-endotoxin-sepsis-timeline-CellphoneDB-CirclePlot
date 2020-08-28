@@ -5,7 +5,7 @@ library(circlize)
 library(ggplot2)
 library(gridExtra)
 
-celltype<-read.csv(file ="celltypes.csv", stringsAsFactors = FALSE)[,c(1,3,4)]
+celltype<-read.csv(file ="celltypes.csv", stringsAsFactors = FALSE)[,c(1,2,3)]
 celltype$Cell.type[22]<-"Cdk1+"
 celltype$Cell.type[14]<-"NK_Tcell_Bcell"
 celltype$Cell.type[c(12,13,19)]<-"Extras"
